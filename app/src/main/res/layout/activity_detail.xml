@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tugas.tugas_ppb.Detail">
+    <TextView
+        android:id="@+id/jenis_ol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis olahraga yang dipilih: "
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/ol_pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jenis_ol"
+        android:paddingBottom="16dp"
+        android:text="--- "
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ol_pilih"
+        android:text="Waktu olahraga (jam)"
+        android:textSize="10pt" />
+
+    <LinearLayout
+        android:id="@+id/linearlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waktu"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="+" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/lakukan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlay"
+        android:text="Lakukan Olahraga" />
+</RelativeLayout>
